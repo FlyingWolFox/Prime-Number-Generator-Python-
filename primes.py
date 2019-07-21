@@ -1,6 +1,7 @@
 n = 2
 m = 1
 rest = []
+print ("2 is prime")
 while(n < 1000):
 	if (n%2 != 0):
 		while(m<n):
