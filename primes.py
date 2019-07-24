@@ -9,6 +9,10 @@ while(n < 1000):
 			rest = rest + [p]
 			count = rest.count(0)
 			m += 1
+			if (count < 2):
+				continue
+			else:
+				break
 		if (count < 2):
 			print(n,"is prime")
 	n += 1
