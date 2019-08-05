@@ -1,4 +1,2 @@
-# Prime-Number-Generator-Python-
-This program generates prime numbers
-Considered finished. An optimization is unprobable
-
+# Prime-Number-Tool-Python
+This program can verify if a number is prime and list primes until a certain limit. This program was made as practice of my Computer Sciece course\n
