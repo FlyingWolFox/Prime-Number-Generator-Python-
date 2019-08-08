@@ -18,5 +18,8 @@ while(n <= 3001):
 	if (count == 1):
 		print(n,"is prime")
 		primes = primes + [n]
-	n += 1
+	if n == 2:
+		n += 1
+	if n != 2:
+		n += 2
 	rest = []

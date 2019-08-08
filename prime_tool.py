@@ -39,7 +39,10 @@ def listPrimes(limit): #Function to list primes until a defined limit
 			if (count == 1): #final verification to write that n is prime
 				print(n,"is prime")
 				primes = primes + [n] #adds the prime found to the list
-			n += 1 #raises the test number by one
+			if n == 2:
+				n += 1 #makes the test number odd
+			if n != 2:
+				n += 2 #maintain the test number odd
 			rest = [] #resets the rest list
 		
 def verifyPrime(number): #Function to verify if a number is prime
@@ -50,7 +53,10 @@ def verifyPrime(number): #Function to verify if a number is prime
 		p = n%m
 		rest = rest + [p] #add the rest of the division to the list
 		count = rest.count(0) #counts how many zeros exist in the list
-		m += 1 #to rise the divisor by one
+		if m == 2:
+			m += 1 #makes the divisor odd
+		else:
+			m += 2 #rise the divisor maintining it odd
 		if (count > 1): #here the code stops if it finds there are more than one zeros in the list (great optimization)
 			print(n,"ins't prime")
 			break
